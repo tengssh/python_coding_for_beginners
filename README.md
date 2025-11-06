@@ -1,6 +1,8 @@
 # Python coding for beginners
 
 ## Systems
+- MacOS/Linux
+  - Terminal
 - Windows
   - WSL
   - Git Bash
