@@ -101,14 +101,13 @@
     - `sorted()`
 
 ## Git
-- Git bash
-- Github account
+- https://swcarpentry.github.io/git-novice/index.html
 - Configuration
   - `git config --global user.name "NAME"`
   - `git config --global user.email "EMAIL"`
   - `git config --global core.editor "nano -w"`
   - `git config --global init.defaultBranch main`
-- Repository
+- Local repository
   - `git init`
     - `ls -a` # .git/
   - `git status`
@@ -123,6 +122,15 @@
     - `--staged`: for staged
   - `.gitignore`
     - files/folders or patterns of files/folders to be ignored
-- Useful commands
-  - `touch FILE`: create an empty file
-  - `cat FILE`: print file content
+  - Useful commands
+    - `touch FILE`: create an empty file
+    - `cat FILE`: print file content
+- Remote repository
+  - Github account
+  - `git remote add origin git@github.com:ACCOUNT/REPO_NAME.git`
+  - `git remote -v`
+  - SSH key
+    - `ssh-keygen -t ed25519 -C "COMMENTS"`
+    - paste public key (`~/.ssh/id_ed25519.pub`) to Github/Settings/SSH and GPG keys/
+    - `ssh -T git@github.com`
+  - `git push origin main` (or with `-u` option)
