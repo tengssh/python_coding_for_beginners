@@ -121,4 +121,8 @@
     - +(green): added
     - -(red): deleted
     - `--staged`: for staged
+  - `.gitignore`
+    - files/folders or patterns of files/folders to be ignored
+- Useful commands
   - `touch FILE`: create an empty file
+  - `cat FILE`: print file content
