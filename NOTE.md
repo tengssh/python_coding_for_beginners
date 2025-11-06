@@ -1,0 +1,116 @@
+# Python coding for beginners
+
+## Systems
+- Windows
+  - WSL
+  - Git Bash
+
+## Linux shell
+- https://swcarpentry.github.io/shell-novice/
+- `COMMAND --help`
+- `ls [OPTION] [PATTERN]`
+  - `-F`: showing /
+  - `-a`: showing ../
+  - `-r`: reverse
+  - `-R`: recursive
+  - [PATTERN]: \*.ext, ? (any single character)
+- `pwd`
+- `cd`
+  - w/o options: going back to home ~
+  - `..`
+- TAB completion
+- `mkdir`
+  - `-p`: for multi-level folders
+- `nano` (text editor)
+  - Ctrl-o + Enter: save
+  - Ctrl-x: exit
+- `mv SRC/ DEST/`
+- `cp FILE_A FILE_B`
+- `rm`
+  - `-i`: interactive mode
+  - `-r`: for folders
+- `wc` (word counts)
+  - `-l`: lines
+- `>`: print into
+- `sort`
+  - `-n`: numeric
+  - `-r`: reverse
+- `head`/`tail`
+  - `-n #`: # of lines
+- `|` (pipe)
+- `uniq`
+  - `-c`: unique counts of sequential lines
+- `cut`
+  - `-d ,`: delimiter
+  - `-f #`: field #
+- Shell scripts (.sh)
+  - `bash script.sh`
+  - `#`: comments
+  - `"$#"`: shorthand for argument #
+
+## Python
+- https://swcarpentry.github.io/python-novice-inflammation/
+- Installation took time.
+  - Miniforge
+- `jupyter`
+  - Re-run
+  - Mouse vs. Keyboard strokes
+- `conda env list`
+- Variables
+  - Naming convention
+- Data types
+- `type()`: type of variable
+- `print()`
+- `help()`
+  - https://stackoverflow.com/
+- `import numpy`
+  - `loadtxt('*.csv', delimiter=',')`
+  - type
+    - `numpy.ndarray`
+    - `float64` (larger than a `float`)
+  - `shape` (rows, columns)
+  - index
+    - Python is a "zero-indexed" language.
+    - Slicing
+      - up to but not including the number after the colon
+      - no final number means go to the end
+  - `mean()`, `std()`, `amin()`, `amax()`, `diff()`
+    - `(..., axis=0)` (0 by column, 1 by row)
+- `import matplotlib.pyplot as plt`
+  - create a graph --> show the graph (`plt.show()`) --> save figure (`plt.savefig(FILE.EXT)`)
+  - `imshow`
+  - `plot`
+  - `fig = figure(figsize=(8,8)`
+  - `ax = fig.add_subplot(nrows, ncols, index)`
+  - `ax.set_xlabel()`, `ax.set_ylabel()`, `ax.set_xlim()`, `ax.set_ylim()`
+  - `ax.grid('on')`
+  - `fig.tight_layout()`
+- List `[]`
+  - mutable
+  - nested list
+  - heterogeneousness
+  - `append()`, `pop()`, `reverse()` vs. `reversed()`
+- Tuple `()`
+  - immutable
+- Loops
+  - `for`
+  - indentation
+  - comments with instructions
+  - `import glob`
+    - `glob.glob('PATTERN')`: all matched filenames
+    - `sorted()`
+
+## Git
+- Git bash
+- Github account
+- Configuration
+  - `git config --global user.name "NAME"`
+  - `git config --global user.email "EMAIL"`
+  - `git config --global core.editor "nano -w"`
+  - `git config --global init.defaultBranch main`
+- Repository
+  - `git init`
+    - `ls -a` # .git/
+  - `git status`
+  - `git add FILE`
+  - `git commit -m "DESCRIPTION"`
