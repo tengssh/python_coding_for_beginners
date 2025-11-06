@@ -95,12 +95,25 @@
 - Tuple `()`
   - immutable
 - Loops
-  - `for`
+  - `for [VARIABLE] in [List]:`
   - indentation
   - comments with instructions
   - `import glob`
     - `glob.glob('PATTERN')`: all matched filenames
     - `sorted()`
+- Conditions
+  - `if (CONDITIONS):`
+  - `elif (CONDI_A and CONDI_B):`
+  - `else:`
+  - indentation
+  - `>`, `>=`, `<`, `<=`, `==`, `!=`
+  - `'''COMMENTS'''`
+- Functions
+  - `def FUNCTION(INPUTS):`
+    - `return OUTPUTS`
+  - indentation
+  - `OUTPUTS = FUNCTION(INPUTS)`
+  - Scopes (local, global)
 
 ## Git
 - https://swcarpentry.github.io/git-novice/index.html
