@@ -111,7 +111,7 @@
   - `git config --global init.defaultBranch main`
 - Local repository
   - `git init`
-    - `ls -a` # .git/
+    - `ls -a` (`.git/`)
   - `git status`
   - `git add FILE_or_DIR` --> (staged) --> `git commit -m "DESCRIPTION"` --> (committed)
   - `git log`
@@ -133,6 +133,6 @@
   - `git remote -v`
   - SSH key
     - `ssh-keygen -t ed25519 -C "COMMENTS"`
-    - paste public key (`~/.ssh/id_ed25519.pub`) to Github/Settings/SSH and GPG keys/
-    - `ssh -T git@github.com`
+    - copy & paste the public key (`~/.ssh/id_ed25519.pub`) to Github/Settings/SSH and GPG keys/
+    - `ssh -T git@github.com` (test connection)
   - `git push origin main` (or with `-u` option)
