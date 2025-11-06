@@ -112,11 +112,13 @@
   - `git init`
     - `ls -a` # .git/
   - `git status`
-  - `git add FILE` --> (staged) --> `git commit -m "DESCRIPTION"` --> (committed)
+  - `git add FILE_or_DIR` --> (staged) --> `git commit -m "DESCRIPTION"` --> (committed)
   - `git log`
     - "q": leave log
-    - `-1`: last entry
+    - `-#`: last # entries
+    - `--oneline`
   - `git diff`
     - +(green): added
     - -(red): deleted
     - `--staged`: for staged
+  - `touch FILE`: create an empty file
