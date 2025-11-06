@@ -112,5 +112,6 @@
   - `git init`
     - `ls -a` # .git/
   - `git status`
-  - `git add FILE`
-  - `git commit -m "DESCRIPTION"`
+  - `git add FILE` --> `git commit -m "DESCRIPTION"`
+  - `git log`
+  - `git diff`
