@@ -51,7 +51,7 @@
   - `"$#"`: shorthand for argument #
 
 ## Python
-- https://swcarpentry.github.io/python-novice-inflammation/
+- <https://swcarpentry.github.io/python-novice-inflammation/>
 - Installation took time.
   - Miniforge
 - `jupyter`
@@ -64,7 +64,7 @@
 - `type()`: type of variable
 - `print()`
 - `help()`
-  - https://stackoverflow.com/
+  - <https://stackoverflow.com/>
 - `import numpy`
   - `loadtxt('*.csv', delimiter=',')`
   - type
@@ -116,7 +116,7 @@
   - Scopes (local, global)
 
 ## Git
-- https://swcarpentry.github.io/git-novice/index.html
+- <https://swcarpentry.github.io/git-novice/index.html>
 - Configuration
   - `git config --global user.name "NAME"`
   - `git config --global user.email "EMAIL"`
