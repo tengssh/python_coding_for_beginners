@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="python-coding-for-beginners">Python coding for beginners</h1>
+<h2 id="systems">Systems</h2>
+<ul>
+<li>MacOS/Linux
+<ul>
+<li>Terminal</li>
+</ul></li>
+<li>Windows
+<ul>
+<li>WSL</li>
+<li>Git Bash</li>
+</ul></li>
+</ul>
+<h2 id="linux-shell">Linux shell</h2>
+<ul>
+<li><a href="https://swcarpentry.github.io/shell-novice/"
+class="uri">https://swcarpentry.github.io/shell-novice/</a></li>
+<li><code>COMMAND --help</code></li>
+<li><code>ls [OPTION] [PATTERN]</code>
+<ul>
+<li><code>-F</code>: showing /</li>
+<li><code>-a</code>: showing ../</li>
+<li><code>-r</code>: reverse</li>
+<li><code>-R</code>: recursive</li>
+<li><code>[PATTERN]</code>: *.ext, ? (any single character)</li>
+</ul></li>
+<li><code>pwd</code></li>
+<li><code>cd</code>
+<ul>
+<li>w/o arguments: going back to home ~</li>
+<li><code>..</code></li>
+</ul></li>
+<li>TAB completion</li>
+<li><code>mkdir</code>
+<ul>
+<li><code>-p</code>: for multi-level folders</li>
+</ul></li>
+<li><code>nano</code> (text editor)
+<ul>
+<li>Ctrl-o + Enter: save</li>
+<li>Ctrl-x: exit</li>
+</ul></li>
+<li><code>mv SRC/ DEST/</code></li>
+<li><code>cp FILE_A FILE_B</code></li>
+<li><code>rm</code>
+<ul>
+<li><code>-i</code>: interactive mode</li>
+<li><code>-r</code>: for folders</li>
+</ul></li>
+<li><code>wc</code> (word counts)
+<ul>
+<li><code>-l</code>: lines</li>
+</ul></li>
+<li><code>&gt;</code>: print into</li>
+<li><code>sort</code>
+<ul>
+<li><code>-n</code>: numeric</li>
+<li><code>-r</code>: reverse</li>
+</ul></li>
+<li><code>head</code>/<code>tail</code>
+<ul>
+<li><code>-n #</code>: # of lines</li>
+</ul></li>
+<li><code>|</code> (pipe)</li>
+<li><code>uniq</code>
+<ul>
+<li><code>-c</code>: unique counts of sequential lines</li>
+</ul></li>
+<li><code>cut</code>
+<ul>
+<li><code>-d ,</code>: delimiter</li>
+<li><code>-f #</code>: field #</li>
+</ul></li>
+<li>Shell scripts (.sh)
+<ul>
+<li><code>bash script.sh</code></li>
+<li><code>#</code>: comments</li>
+<li><code>"$#"</code>: shorthand for argument #</li>
+</ul></li>
+</ul>
+<h2 id="python">Python</h2>
+<ul>
+<li><a href="https://swcarpentry.github.io/python-novice-inflammation/"
+class="uri">https://swcarpentry.github.io/python-novice-inflammation/</a></li>
+<li>Installation took time.
+<ul>
+<li>Miniforge</li>
+</ul></li>
+<li><code>jupyter</code>
+<ul>
+<li>Re-run</li>
+<li>Mouse vs. Keyboard strokes</li>
+</ul></li>
+<li><code>conda env list</code></li>
+<li>Variables
+<ul>
+<li>Naming convention</li>
+</ul></li>
+<li>Data types</li>
+<li><code>type()</code>: type of variable</li>
+<li><code>print()</code></li>
+<li><code>help()</code>
+<ul>
+<li><a href="https://stackoverflow.com/"
+class="uri">https://stackoverflow.com/</a></li>
+</ul></li>
+<li><code>import numpy</code>
+<ul>
+<li><code>loadtxt('*.csv', delimiter=',')</code></li>
+<li>type
+<ul>
+<li><code>numpy.ndarray</code></li>
+<li><code>float64</code> (larger than a <code>float</code>)</li>
+</ul></li>
+<li><code>shape</code> (rows, columns)</li>
+<li>index
+<ul>
+<li>Python is a “zero-indexed” language.</li>
+<li>Slicing
+<ul>
+<li>up to but not including the number after the colon</li>
+<li>no final number means go to the end</li>
+</ul></li>
+</ul></li>
+<li><code>mean()</code>, <code>std()</code>, <code>amin()</code>,
+<code>amax()</code>, <code>diff()</code>
+<ul>
+<li><code>(..., axis=0)</code> (0 by column, 1 by row)</li>
+</ul></li>
+</ul></li>
+<li><code>import matplotlib.pyplot as plt</code>
+<ul>
+<li>create a graph –&gt; show the graph (<code>plt.show()</code>) –&gt;
+save figure (<code>plt.savefig(FILE.EXT)</code>)</li>
+<li><code>imshow</code></li>
+<li><code>plot</code></li>
+<li><code>fig = figure(figsize=(8,8)</code></li>
+<li><code>ax = fig.add_subplot(nrows, ncols, index)</code></li>
+<li><code>ax.set_xlabel()</code>, <code>ax.set_ylabel()</code>,
+<code>ax.set_xlim()</code>, <code>ax.set_ylim()</code></li>
+<li><code>ax.grid('on')</code></li>
+<li><code>fig.tight_layout()</code></li>
+</ul></li>
+<li>List <code>[]</code>
+<ul>
+<li>mutable</li>
+<li>nested list</li>
+<li>heterogeneousness</li>
+<li><code>append()</code>, <code>pop()</code>, <code>reverse()</code>
+vs. <code>reversed()</code></li>
+</ul></li>
+<li>Tuple <code>()</code>
+<ul>
+<li>immutable</li>
+</ul></li>
+<li>Loops
+<ul>
+<li><code>for [VARIABLE] in [List]:</code></li>
+<li>indentation</li>
+<li>comments with instructions</li>
+<li><code>import glob</code>
+<ul>
+<li><code>glob.glob('PATTERN')</code>: all matched filenames</li>
+<li><code>sorted()</code></li>
+</ul></li>
+</ul></li>
+<li>Conditions
+<ul>
+<li><code>if (CONDITIONS):</code></li>
+<li><code>elif (CONDI_A and CONDI_B):</code></li>
+<li><code>else:</code></li>
+<li>indentation</li>
+<li><code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>,
+<code>&lt;=</code>, <code>==</code>, <code>!=</code></li>
+<li><code>'''COMMENTS'''</code></li>
+</ul></li>
+<li>Functions
+<ul>
+<li><code>def FUNCTION(INPUTS):</code>
+<ul>
+<li><code>return OUTPUTS</code></li>
+</ul></li>
+<li>indentation</li>
+<li><code>OUTPUTS = FUNCTION(INPUTS)</code></li>
+<li>Scopes (local, global)</li>
+</ul></li>
+</ul>
+<h2 id="git">Git</h2>
+<ul>
+<li><a href="https://swcarpentry.github.io/git-novice/index.html"
+class="uri">https://swcarpentry.github.io/git-novice/index.html</a></li>
+<li>Configuration
+<ul>
+<li><code>git config --global user.name "NAME"</code></li>
+<li><code>git config --global user.email "EMAIL"</code></li>
+<li><code>git config --global core.editor "nano -w"</code></li>
+<li><code>git config --global init.defaultBranch main</code></li>
+</ul></li>
+<li>Local repository
+<ul>
+<li><code>git init</code>
+<ul>
+<li><code>ls -a</code> (<code>.git/</code>)</li>
+</ul></li>
+<li><code>git status</code></li>
+<li><code>git add FILE_or_DIR</code> –&gt; (staged) –&gt;
+<code>git commit -m "DESCRIPTION"</code> –&gt; (committed)</li>
+<li><code>git log</code>
+<ul>
+<li>“q”: leave log</li>
+<li><code>-#</code>: last # entries</li>
+<li><code>--oneline</code></li>
+</ul></li>
+<li><code>git diff</code>
+<ul>
+<li>+(green): added</li>
+<li>-(red): deleted</li>
+<li><code>--staged</code>: for staged</li>
+</ul></li>
+<li><code>.gitignore</code>
+<ul>
+<li>files/folders or patterns of files/folders to be ignored</li>
+</ul></li>
+<li>Useful commands
+<ul>
+<li><code>touch FILE</code>: create an empty file</li>
+<li><code>cat FILE</code>: print file content</li>
+</ul></li>
+</ul></li>
+<li>Remote repository
+<ul>
+<li>Github account</li>
+<li><code>git remote add origin git@github.com:ACCOUNT/REPO_NAME.git</code></li>
+<li><code>git remote -v</code></li>
+<li>SSH key
+<ul>
+<li><code>ssh-keygen -t ed25519 -C "COMMENTS"</code></li>
+<li>copy &amp; paste the public key (<code>~/.ssh/id_ed25519.pub</code>)
+to Github/Settings/SSH and GPG keys/</li>
+<li><code>ssh -T git@github.com</code> (test connection)</li>
+</ul></li>
+<li><code>git push origin main</code> (or with <code>-u</code>
+option)</li>
+</ul></li>
+</ul>
+</body>
+</html>
