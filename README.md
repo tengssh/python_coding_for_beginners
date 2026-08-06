@@ -8,17 +8,17 @@
   - Git Bash
 
 ## Linux shell
-- https://swcarpentry.github.io/shell-novice/
+- <https://swcarpentry.github.io/shell-novice/>
 - `COMMAND --help`
 - `ls [OPTION] [PATTERN]`
   - `-F`: showing /
   - `-a`: showing ../
   - `-r`: reverse
   - `-R`: recursive
-  - [PATTERN]: \*.ext, ? (any single character)
+  - `[PATTERN]`: \*.ext, ? (any single character)
 - `pwd`
 - `cd`
-  - w/o options: going back to home ~
+  - w/o arguments: going back to home ~
   - `..`
 - TAB completion
 - `mkdir`
